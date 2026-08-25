@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LSD Cricket | Cricket Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">🏏 LSD <span>Cricket</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#hard">Hard Cricket</a>
+    <a href="#soft">Soft Cricket</a>
+    <a href="#contact">Contact</a>
+    <button class="cart-btn" onclick="openCart()">🛒 Cart (<span id="cartCount">0</span>)</button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <p class="tag">YOUR CRICKET STORE</p>
+    <h1>Play Hard.<br>Play Better.</h1>
+    <p>Quality cricket equipment for Hard Ball & Soft Ball cricket.</p>
+    <a class="btn" href="#products">Shop Now</a>
+  </div>
+</section>
+
+<section class="section" id="products">
+<h2>Our Products</h2>
+<p class="sub">Choose your cricket category</p>
+
+<div class="categories">
+  <a href="#hard">🏏 Hard Cricket</a>
+  <a href="#soft">🎾 Soft Cricket</a>
+</div>
+
+<h2 id="hard">Hard Cricket</h2>
+<div class="products" id="hardProducts"></div>
+
+<h2 id="soft">Soft Cricket</h2>
+<div class="products" id="softProducts"></div>
+</section>
+
+<section class="about">
+<h2>Why Choose LSD Cricket?</h2>
+<div class="features">
+  <div>✅ Quality Products</div>
+  <div>💰 Affordable Prices</div>
+  <div>📦 Easy Ordering</div>
+  <div>📞 Quick Customer Support</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact LSD Cricket</h2>
+<p>📱 WhatsApp: 07X XXX XXXX</p>
+<p>📧 Email: lsdcricket@example.com</p>
+<p>📍 Sri Lanka</p>
+</section>
+
+<div class="cart" id="cart">
+  <div class="cart-box">
+    <button class="close" onclick="closeCart()">×</button>
+    <h2>🛒 Your Cart</h2>
+    <div id="cartItems"></div>
+    <h3>Total: Rs. <span id="cartTotal">0</span></h3>
+    <button class="checkout" onclick="checkout()">Order Now</button>
+  </div>
+</div>
+
+<footer>© 2026 LSD Cricket. All Rights Reserved.</footer>
+<script src="script.js"></script>
+</body>
+</html>
